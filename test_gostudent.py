@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
 
-from gostudent import transform
+from transform import transform
 
 
 @pytest.fixture(scope="module")
