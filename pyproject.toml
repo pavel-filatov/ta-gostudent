@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "ta-gostudent"
+version = "0.1.0"
+description = ""
+authors = ["Pavel Filatov <filatov.py@gmail.com>"]
+readme = "README.md"
+packages = [{include = "./*.py"}]
+
+[tool.poetry.scripts]
+gostudent = "gostudent:main"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^1.5.3"
+pyarrow = "^11.0.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
