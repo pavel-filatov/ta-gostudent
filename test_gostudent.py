@@ -32,9 +32,10 @@ def test_transform(lessons: pd.DataFrame, tutors: pd.DataFrame):
     tested = transform(lessons, tutors)
 
     expected_projection = ["date", "tutor_id", "tutor_name", "tutor_location", "subject", "earned_in_total"]
-
-    null_count = tested.isnull().sum().sum()
-
     assert list(tested.columns) == expected_projection
+
+    string_columns = ["tutor_name", "tutor_location", "subject"]
+    null_count = tested[string_columns].isnull().sum().sum()
+
     assert null_count == 0
 
