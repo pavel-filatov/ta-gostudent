@@ -36,10 +36,10 @@ There are the example commands:
 
 ```shell
 # 1. Compute the most popular subjects
-sqlite3 sql/gostudent.sqlite < sql/01_most_popular_lessons.sql
+sqlite3 gostudent.sqlite < sql/01_most_popular_lessons.sql
 
 # 2. Compute the total time spent on lessons this year per month 
-sqlite3 sql/gostudent.sqlite < sql/02_lessons_time_per_month_this_year.sql
+sqlite3 gostudent.sqlite < sql/02_lessons_time_per_month_this_year.sql
 ```
 
 ### How to check the outputs
