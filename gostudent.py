@@ -26,9 +26,8 @@ def main() -> None:
     # Transform
     salaries = transform(lessons_info_raw, tutors_info_raw)
 
-    salary_tables_per_date = filter_data_and_assign_month_date(salaries)
-
     # IO: Write
+    salary_tables_per_date = filter_data_and_assign_month_date(salaries)
     for month, date, table in salary_tables_per_date:
         write(table, output_base_dir / month / f"{date}.{output_file_format}", output_file_format)
 
