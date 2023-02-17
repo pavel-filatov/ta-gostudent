@@ -8,6 +8,7 @@ packages = [{include = "./*.py"}]
 
 [tool.poetry.scripts]
 gostudent = "gostudent:main"
+generate = "generate_data:main"
 
 [tool.poetry.dependencies]
 python = "^3.9"
